@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Trabalho</title>
+</head>
+<body>
+    <h1>TRABALHO DE MATEMÁTICA 3º ANO</h1>
+    <h3>Davi Q., Matheus H., Nicollas K., Rafael G.</h3>
+    <div class="abc"></div>
+    <p></p>
+    <div class="P1">
+    <h2>NOME</h2>
+    <div id="Choicediv">
+    <select id="Choice">
+        <option value="">Selecione aqui o seu nome...</option>
+        <option value="Allanis Sousa Rodrigues">Allanis Sousa Rodrigues</option>
+        <option value="Augusto da Silva Carneiro de Arruda">Augusto da Silva Carneiro de Arruda</option>
+        <option value="Bruno Daniel Barbosa Pires">Bruno Daniel Barbosa Pires</option>
+        <option value="Daniel Gomes dos Reis">Daniel Gomes dos Reis</option>
+        <option value="Davi de Queiroz Caixeta Bispo">Davi de Queiroz Caixeta Bispo</option>
+        <option value="Davi Marinho Cardoso">Davi Marinho Cardoso</option>
+        <option value="Davy Baptista Coelho dos Santos Moutinho">Davy Baptista Coelho dos Santos Moutinho</option>
+        <option value="Gabriel Gomes Rabelo Rodrigues">Gabriel Gomes Rabelo Rodrigues</option>
+        <option value="Gabriel Lopes Martins">Gabriel Lopes Martins</option>
+        <option value="Guilherme Oliveira do Nascimento">Guilherme Oliveira do Nascimento</option>
+        <option value="Guilherme Rodrigues Azevedo Souza">Guilherme Rodrigues Azevedo Souza</option>
+        <option value="Julia Paz de Lima Barros">Julia Paz de Lima Barros</option>
+        <option value="Kaio Kelvin de Souza Barros Cutrim">Kaio Kelvin de Souza Barros Cutrim</option>
+        <option value="Lucas Monteiro Brito">Lucas Monteiro Brito</option>
+        <option value="Mario Marcos Martins de Souza Filho">Mario Marcos Martins de Souza Filho</option>
+        <option value="Matheus Henrique Lopes Xavier">Matheus Henrique Lopes Xavier</option>
+        <option value="Miguel Eduardo dos Santos Resende">Miguel Eduardo dos Santos Resende</option>
+        <option value="Nicollas Khrislen da Silva Trindade">Nicollas Khrislen da Silva Trindade</option>
+        <option value="Pedro Barbieri Maia">Pedro Barbieri Maia</option>
+        <option value="Pedro Emanuel Santos Ribeiro">Pedro Emanuel Santos Ribeiro</option>
+        <option value="Rafael Costa Gadelha">Rafael Costa Gadelha</option>
+        <option value="Raylla Victoria Brito Araújo">Raylla Victoria Brito Araújo</option>
+        <option value="Samuel Silva Gomes">Samuel Silva Gomes</option>
+        <option value="Vanderlei Lopes Martins da Silva">Vanderlei Lopes Martins da Silva</option>
+        <option value="Yasmin Macedo Martins">Yasmin Macedo Martins</option>
+      </select>
+    </div>
+    <div class="ab"></div>
+    <p></p>
+      <div class="P2">
+      <div class="Area1">
+        <h2>QUAL VOCÊ PREFERE?</h2>
+        <div class="AreaBtn1">
+          <div class="StyleBtn1" id="btnMC" onclick="selectOptionPosition('MC')">
+            <img src="MC.png" alt="MC">
+          </div>
+          <div class="StyleBtn1" id="btnBK" onclick="selectOptionPosition('BK')">
+            <img src="BK.png" alt="BK">
+          </div>
+          <div class="StyleBtn1" id="btnSB" onclick="selectOptionPosition('SB')">
+            <img src="SB.png" alt="SB">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ab"></div>
+    <p></p>
+    <div class="P3">
+      <h2>ENVIAR RESPOSTAS</h2>
+  <form  id="FormSheet" method="post" action="" name="contact-form">
+    <input type="hidden" name="Escolha" id="campoEscolha">
+    <input type="hidden" name="Nome" id="campoNome">
+
+    <button type="submit" class="BtnP1">Enviar</button>
+  </form>
+  </div>
+</div>
+</body>
+</html>
+<style>
+  body{
+    user-select: none;
+    background: linear-gradient(to right, black, #504949); 
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 40px;
+    color: #d8c799;
+}
+h3{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #a6a6a6;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+#Choicediv{    
+    justify-content: center;
+    text-align: center}
+#Choice{
+    justify-content: center;
+    text-align: center;
+    font-size: 20px ;
+}
+.Area1{
+  text-align: center}
+.AreaBtn1{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;}
+.StyleBtn1{
+  text-align: center;
+  justify-content: center;
+  width: 150px;
+  height: 100px;
+  background-color: #373131;
+  border: solid #a6a6a6;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: all 0.3s ease;}
+.StyleBtn1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;}
+.StyleBtn1.selected{
+  transform: scale(1.13);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);}
+.StyleBtn1.deselected{
+  opacity: 0.2 }
+.P3{
+  text-align: center;
+  justify-content: center;}
+.ab{
+  height: 100px;
+}
+.abc{
+  height: 50px;
+}
+.BtnP1{
+  background-color: #d8c799;
+  font-size: 15px;
+  width: 90px;
+  height: 40px;
+  border-radius: 10px;
+}
+.BtnP1:active {
+  transform: scale(0.95);}
+</style>
+<script>
+  let Escolha = '';
+
+function selectOptionPosition(position) {
+         
+  const buttons = document.querySelectorAll('.StyleBtn1');
+
+  if (!Escolha) {
+             
+      buttons.forEach(btn => btn.classList.add('deselected'));
+  }
+
+  buttons.forEach(btn => btn.classList.remove('selected'));
+
+  const selectedButton = document.getElementById(`btn${position}`);
+  selectedButton.classList.add('selected');
+  selectedButton.classList.remove('deselected');
+
+
+  Escolha = position;
+
+  buttons.forEach(btn => {
+      if (btn !== selectedButton) {
+           btn.classList.add('deselected');
+      }
+  });
+
+  console.log('so o ouro');}
+
+////////////////////////////////////////////////////////////////////////////////////////////
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwrOx-zj0ggnH6TD4QK5GQAG1Z4BtkyLZOMIrfaf6uKJJzKGiWvnAxMRwwfWU3JZliw/exec';
+const form = document.forms['contact-form'];
+const submitButton = document.querySelector('button[type="submit"]');
+
+function preencherFormulario() {
+  const Escolha1 = Escolha;
+  const Nome1 = document.getElementById("Choice").value;
+
+  document.getElementById("campoNome").value = Nome1;
+  document.getElementById("campoEscolha").value = Escolha1;
+ 
+}
+
+form.addEventListener('submit', e => {
+  e.preventDefault(); 
+
+  submitButton.disabled = true;
+
+  const confirmacao = confirm("Somente confirme depois que fizer todos os tipos de downloads necessários");
+
+  if (confirmacao) {
+    preencherFormulario();
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        alert("Os dados foram enviados com sucesso.");
+        window.location.reload();
+      })
+      .catch(error => {
+        console.error('Erro!', error.message);
+        alert("Ocoreu um erro, não foi possível enviar os dados")
+        submitButton.disabled = false;
+      });
+  } else {
+    alert("Envio cancelado.");
+    submitButton.disabled = false;
+  }
+});
+
+</script>
